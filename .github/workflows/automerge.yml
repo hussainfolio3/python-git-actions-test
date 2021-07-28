@@ -1,5 +1,11 @@
 name: automerge
 on:
+  workflow_run:
+    types:
+      - completed
+    workflows:
+      # List all required workflow names here.
+      - 'Python package'
   pull_request:
     types:
       - labeled
