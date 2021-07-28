@@ -5,7 +5,7 @@ on:
       - completed
     workflows:
       # List all required workflow names here.
-      - 'Python package'
+      - 'test'
 jobs:
   automerge:
     runs-on: ubuntu-latest
