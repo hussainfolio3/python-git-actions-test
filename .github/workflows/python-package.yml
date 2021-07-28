@@ -24,9 +24,9 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        python3 -m pip3 install --upgrade pip3
-        python3 -m pip3 install flake8
-        sudo -H pip3 install -U pipenv
+        python -m pip install --upgrade pip
+        python -m pip install flake8
+        pip install -U pipenv
         pipenv shell
         pipenv install
     - name: Lint with flake8
