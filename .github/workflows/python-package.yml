@@ -36,6 +36,9 @@ jobs:
       if: steps.cache-pipenv.outputs.cache-hit != 'true'
       run: |
         pipenv install
+        pipenv install flake8 --dev
+
+        
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
