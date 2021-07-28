@@ -10,4 +10,4 @@ def test_divide():
     assert sum.divide(10,2)==5
 
 def test_divide2():
-    assert sum.divide(10,5)==2
+    assert sum.divide(10,5)==4
